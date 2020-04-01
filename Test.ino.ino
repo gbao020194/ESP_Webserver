@@ -34,15 +34,15 @@ void setup(){
 
   // Route for root / web page
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){
-    request->send(SPIFFS, "/Layout.html", "text/html");
+    request->send(SPIFFS, "Smart_Home.html", "text/html");
   });
 
   server.on("/Layout.css", HTTP_GET, [](AsyncWebServerRequest *request){
-    request->send(SPIFFS, "/Layout.css", "text/css");
+    request->send(SPIFFS, "/Smart_Home.css", "text/css");
   });
 
   server.on("/Layout.js", HTTP_GET, [](AsyncWebServerRequest *request){
-    request->send(SPIFFS, "/Layout.js", "text/js");
+    request->send(SPIFFS, "/Smart_Home.js", "text/js");
   });
 
   // Start server
