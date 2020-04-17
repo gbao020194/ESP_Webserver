@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Control_Devices</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initital-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header><p style="color:red">SMART HOME</p></header>
+<div class= "menu">
+    <ul>
+        <li><a href="./Main.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Source</a>
+            <div class="dropdown-content">
+                <a type="text/css" href='./Style.css' target="_blank">CSS File</a>
+                <a type="text/javascript" href='./Main.js' target="_blank">Main JS</a>
+                <a type="text/javascript" href='./Button.js' target="_blank">Button JS</a>
+            </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li style="float: right;"><a href="#" >About</a></li>
+        <li style="float: right;"><a href="#addr">Address</a></li>
+    </ul>
+</div>
+<section>
+    <nav>
+        <div>
+            <ul class="link">
+                <li title="Show all of informations" style="margin-top:-16px;"><a href="#" onclick="Help_f()">Help</a></li>
+                <li title="Show all of button controler"><a href="./Button.html">Button</a></li>
+                <li title="Read temperature"><a href="./Temperature.html">Temperature</a></li>
+            </ul>
+        </div>
+    </nav>
+    <article>
+        <div class="Timer" id="Date"></div>
+        <br><div><hr style="border: 3px solid #408cff; width: 20%;" ></div><br>
+        <div id="Inf">
+            <h1 id="ID" style="margin-top: 0;" class="font-effect-shadow-multiple">LONDON</h1>
+            <p id="Inf_1" class="txt">London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <p id="Inf_2" class="txt">Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+            <img id="Pic" src="https://duhocnamphong.vn/images/news/2019/11/original/thanh-pho-london-uk_1574412943.jpg" alt="London picture">
+        </div>
+        <br><br>
+    </article>
+</section>
+<footer>
+    <address id="addr">
+        Written by Ngo Gia Bao.<br>
+        Email: gbao020194@gmail.com<br>
+        169 Lien Phuong, P. Phuoc Long<br>
+        Q.9, TP.HCM.
+    </address>
+</footer>
+<script src="Main.js"></script>
+</body>
+</html>
