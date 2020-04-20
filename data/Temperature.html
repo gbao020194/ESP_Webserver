@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Control_Devices</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initital-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+<header><p style="color:red">SMART HOME</p></header>
+<div class= "menu">
+    <ul>
+        <li><a href="./Main.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Source</a>
+            <div class="dropdown-content">
+                <a type="text/css" href='./Style.css' target="_blank">CSS File</a>
+                <a type="text/javascript" href='./Main.js' target="_blank">Main JS</a>
+                <a type="text/javascript" href='./Button.js' target="_blank">Button JS</a>
+            </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li style="float: right;"><a href="#" >About</a></li>
+        <li style="float: right;"><a href="#addr">Address</a></li>
+    </ul>
+</div>
+<section>
+    <nav>
+        <div>
+            <ul class="link">
+                <li title="Show all of informations" style="margin-top:-16px;"><a href="#" onclick="Help_f()">Help</a></li>
+                <li title="Show all of button controler"><a href="./Button.html">Button</a></li>
+                <li title="Read temperature"><a href="./Temperature.html">Temperature</a></li>
+            </ul>
+        </div>
+    </nav>
+    <article>
+        <div class="Timer" id="Date"></div>
+        <br><div><hr style="border: 3px solid #408cff; width: 20%;" ></div><br>
+        <div id="Inf"><h1 id="ID" style="margin-top: 0;" class="font-effect-shadow-multiple">TEMPERATURE</h1></div>
+        <div id="Tempt" class="content">
+            <div class="box gauge--1">
+                <h3>TEMPERATURE</h3>
+                <div class="mask">
+                    <div class="semi-circle"></div>
+                    <div class="semi-circle--mask"></div>
+                </div>
+                <p style="font-size: 30px;"><span id="temp">--</span>&deg;C</p>
+                <div style="margin-left: 30%; margin-right: 70%;">
+                    <table cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td>Min</td>
+                        <td>Max</td>
+                        <td>Average</td>
+                    </tr>
+                    <tr>
+                        <td> &deg;C</td>
+                        <td> &deg;C</td>
+                        <td> &deg;C</td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="box gauge--2">
+                <h3>HUMIDITY</h3>
+                <div class="mask">
+                    <div class="semi-circle"></div>
+                    <div class="semi-circle--mask"></div>
+                </div>
+                <p style="font-size: 30px;"><span id="humi">--</span>%</p>
+                <div style="margin-left: 35%; margin-right: 65%;">
+                    <table cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td>Min</td>
+                        <td>Max</td>
+                        <td>Average</td>
+                    </tr>
+                    <tr>
+                        <td><?php echo $min_humi['min_amount']; ?> %</td>
+                        <td><?php echo $max_humi['max_amount']; ?> %</td>
+                        <td><?php echo round($avg_humi['avg_amount'], 2); ?> %</td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </article>
+</section>
+<footer>
+    <address id="addr">
+        Written by Ngo Gia Bao.<br>
+        Email: gbao020194@gmail.com<br>
+        169 Lien Phuong, P. Phuoc Long<br>
+        Q.9, TP.HCM.
+    </address>
+</footer>
+<script src="Temperature.js"></script>
+</body>
+</html>
